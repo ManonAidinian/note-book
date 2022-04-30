@@ -18,6 +18,11 @@ class Notebook
     store_csv
   end
 
+  def edit(new_desc, idx)
+    @notebook_array[idx].description = new_desc
+    store_csv
+  end
+
   def remove(index)
     @notebook_array.delete_at(index)
     store_csv

@@ -1,5 +1,6 @@
 class Note
-  attr_reader :title, :description
+  attr_reader :title
+  attr_accessor :description
 
   def initialize(title, description)
     @title = title

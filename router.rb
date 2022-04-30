@@ -18,25 +18,25 @@ class Router
     puts '------------------------'
     puts 'WELCOME TO YOUR NOTEBOOK'
     puts '------------------------'
-    puts ""
   end
 
   def ask_for_action
     puts ""
-    puts 'What would you like to do? (Please enter a number)'
-    puts '1 > See all my notes'
-    puts '2 > Create a new note'
-    puts '3 > Delete a note'
-    puts '4 > Exit'
-    puts ""
+    puts '*** What would you like to do? *** (Please enter a number)'
+    puts '1. See all my notes'
+    puts '2. Create a new note'
+    puts '3. Edit a note'
+    puts '4. Delete a note'
+    puts '5. Exit'
   end
 
   def looping(action)
     case action
     when 1 then @controller.display_all_notes
     when 2 then @controller.create
-    when 3 then @controller.delete
-    when 4 then stop!
+    when 3 then @controller.modify
+    when 4 then @controller.delete
+    when 5 then stop!
     else
       puts 'Please enter a correct number'
     end
