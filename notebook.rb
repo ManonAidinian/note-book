@@ -34,11 +34,10 @@ class Notebook
   end
 
   def store_csv
-    CSV.open(@filepath, "wb") do |csv|
+    CSV.open(@filepath, 'wb') do |csv|
     @notebook_array.each do |note|
       csv << [note.title, note.description]
     end
+    end
   end
-  end
-
 end

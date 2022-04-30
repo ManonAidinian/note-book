@@ -26,5 +26,4 @@ class Controller
     @notebook.remove(index)
     @view.note_successfully_deleted
   end
-
 end
