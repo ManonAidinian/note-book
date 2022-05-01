@@ -2,7 +2,7 @@
 require 'csv'
 require_relative 'note.rb'
 
-class Notebook
+class NoteRepo
   def initialize(filepath)
     @notebook_array = []
     @filepath = filepath
